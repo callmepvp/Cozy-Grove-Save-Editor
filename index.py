@@ -69,6 +69,7 @@ while True:
 
             #Output Formatted File
             with open(f'{outputFilePath}/cg_save.sf', 'wb') as f:
+                f.write(b'60z,') #Adds the decryption block
                 f.write(encodedBytes)
 
             print('[ENCODING SUCCESSFUL]')
